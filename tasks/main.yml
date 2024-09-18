@@ -1,0 +1,5 @@
+---
+- name: include
+  include_tasks: "{{ item }}"
+  loop:
+  - Gnome/main.yml

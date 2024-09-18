@@ -1,0 +1,8 @@
+---
+- name: Gsettings
+  include_tasks: "{{ t }}.yml"
+  loop:
+  - ergonomic
+  - power
+  loop_control:
+    loop_var: t

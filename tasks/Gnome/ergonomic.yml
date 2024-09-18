@@ -1,0 +1,12 @@
+---
+- name: Click-Policy Single
+  community.general.dconf:
+    key: "/org/gnome/nautilus/preferences/click-policy"
+    value: "'single'"
+    state: present
+
+- name: Mouse Speed
+  community.general.dconf:
+    key: "/org/gnome/desktop/peripherals/mouse/speed"
+    value: '1.0'
+    state: present
