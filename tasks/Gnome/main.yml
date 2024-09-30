@@ -2,6 +2,7 @@
 - name: Gsettings
   include_tasks: "{{ t }}.yml"
   loop:
+  - desktop
   - dock
   - ergonomic
   - power
