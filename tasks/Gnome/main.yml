@@ -4,5 +4,7 @@
   loop:
   - ergonomic
   - power
+  - window
+  - workspace
   loop_control:
     loop_var: t
