@@ -1,4 +1,12 @@
-# org.gnome.shell.extensions.dash-to-dock autohide true
+---
+- name: Auto-hide the dock
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/dash-to-dock/dock-fixed"
+    value: "false"
+    state: present
 
-
-# org.gnome.shell.extensions.dash-to-dock intellihide true
+- name: Dock Position on screen
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/dash-to-dock/dock-position"
+    value: "'BOTTOM'"
+    state: present
