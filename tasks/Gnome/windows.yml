@@ -1,5 +1,11 @@
 ---
 
+- name: Focus Follows mouse
+  community.general.dconf:
+    key: "/org/gnome/desktop/wm/preferences/focus-mode "
+    value: "'sloppy'"
+    state: present
+
 - name: Window Auto-Raise
   community.general.dconf:
     key: "/org/gnome/desktop/wm/preferences/auto-raise"
