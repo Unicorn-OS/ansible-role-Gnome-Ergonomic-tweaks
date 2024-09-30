@@ -1,0 +1,12 @@
+---
+- name: Workspace on all displays
+  community.general.dconf:
+    key: "/org/gnome/mutter/workspaces-only-on-primary"
+    value: "false"
+    state: present
+
+- name: Include applications from the current workspace only
+  community.general.dconf:
+    key: "/org/gnome/shell/window-switcher/current-workspace-only"
+    value: "true"
+    state: present
