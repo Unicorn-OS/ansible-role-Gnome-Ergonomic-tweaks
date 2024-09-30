@@ -1,0 +1,9 @@
+---
+# TODO: Desktop Icons - Show Personal folder
+# doesn't seem to be in gsettings?
+
+# - name: Desktop Icons - Show Personal folder
+#   community.general.dconf:
+#     key: "/org/gnome/shell/extensions/dash-to-dock/show-trash"
+#     value: "false"
+#     state: present
