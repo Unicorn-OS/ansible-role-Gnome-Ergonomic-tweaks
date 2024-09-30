@@ -3,7 +3,7 @@
 - name: Window Auto-Raise
   community.general.dconf:
     key: "/org/gnome/desktop/wm/preferences/auto-raise"
-    value: "'true'"
+    value: "true"
     state: present
 
 #gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 0
